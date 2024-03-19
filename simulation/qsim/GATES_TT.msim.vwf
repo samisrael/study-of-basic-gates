@@ -25,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 200.0;
+	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 0.0;
@@ -202,7 +202,7 @@ SIGNAL("GATES_TT_vlg_vec_tst|i1|~QUARTUS_CREATED_GND~I_combout")
 	PARENT = "";
 }
 
-SIGNAL("GATES_TT_vlg_vec_tst|i1|a~input_o")
+SIGNAL("GATES_TT_vlg_vec_tst|i1|b~input_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -212,7 +212,7 @@ SIGNAL("GATES_TT_vlg_vec_tst|i1|a~input_o")
 	PARENT = "";
 }
 
-SIGNAL("GATES_TT_vlg_vec_tst|i1|b~input_o")
+SIGNAL("GATES_TT_vlg_vec_tst|i1|a~input_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -242,24 +242,12 @@ SIGNAL("GATES_TT_vlg_vec_tst|i1|comb~1_combout")
 	PARENT = "";
 }
 
-SIGNAL("GATES_TT_vlg_vec_tst|i1|comb~2_combout")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 TRANSITION_LIST("GATES_TT_vlg_vec_tst|a")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -268,11 +256,9 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|b")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 700.0;
 	}
 }
 
@@ -281,9 +267,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|andgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -292,9 +276,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|nandgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -303,9 +285,9 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|norgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 700.0;
 	}
 }
 
@@ -314,9 +296,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|notgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -325,9 +305,9 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|orgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 700.0;
 	}
 }
 
@@ -336,9 +316,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|xnorgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -347,9 +325,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|xorgate")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 140.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -358,11 +334,9 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|sampler")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL X FOR 100.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 700.0;
 	}
 }
 
@@ -371,7 +345,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|gnd")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 200.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -380,7 +354,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|vcc")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -389,7 +363,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|unknown")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 200.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -398,7 +372,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|devclrn")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -407,7 +381,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|devpor")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -416,7 +390,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|devoe")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 200.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -425,18 +399,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|~QUARTUS_CREATED_GND~I_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 200.0;
-	}
-}
-
-TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|a~input_o")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -445,11 +408,18 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|b~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 700.0;
+	}
+}
+
+TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|a~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -458,9 +428,7 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|comb~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 120.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -469,20 +437,9 @@ TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|comb~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 120.0;
-	}
-}
-
-TRANSITION_LIST("GATES_TT_vlg_vec_tst|i1|comb~2_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 140.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 700.0;
 	}
 }
 
@@ -641,7 +598,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "GATES_TT_vlg_vec_tst|i1|a~input_o";
+	CHANNEL = "GATES_TT_vlg_vec_tst|i1|b~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -650,7 +607,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "GATES_TT_vlg_vec_tst|i1|b~input_o";
+	CHANNEL = "GATES_TT_vlg_vec_tst|i1|a~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -672,15 +629,6 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "GATES_TT_vlg_vec_tst|i1|comb~2_combout";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 21;
 	TREE_LEVEL = 0;
 }
 ;

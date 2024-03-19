@@ -1,5 +1,5 @@
 Fitter report for GATES_TT
-Tue Jan 09 19:42:31 2024
+Fri Mar 15 10:39:25 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +-------------------------------------+-------------------------------------------------+
-; Fitter Status                       ; Successful - Tue Jan 09 19:42:31 2024           ;
+; Fitter Status                       ; Successful - Fri Mar 15 10:39:25 2024           ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                       ; GATES_TT                                        ;
 ; Top-level Entity Name               ; GATES_TT                                        ;
@@ -131,7 +131,7 @@ applicable agreement for further details.
 ; Auto Global Clock                                                          ; On                                    ; On                                    ;
 ; Auto Global Register Control Signals                                       ; On                                    ; On                                    ;
 ; Reserve all unused pins                                                    ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
-; Synchronizer Identification                                                ; Off                                   ; Off                                   ;
+; Synchronizer Identification                                                ; Auto                                  ; Auto                                  ;
 ; Enable Beneficial Skew Optimization                                        ; On                                    ; On                                    ;
 ; Optimize Design for Metastability                                          ; On                                    ; On                                    ;
 ; Active Serial clock source                                                 ; FREQ_100MHz                           ; FREQ_100MHz                           ;
@@ -147,7 +147,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -175,8 +175,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 22 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 22 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 21 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 21 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -199,7 +199,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 22      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 21      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 0       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -207,7 +207,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
+The pin-out file can be found in C:/Users/SEC/OneDrive/Desktop/study-of-basic-gates/output_files/GATES_TT.pin.
 
 
 +-------------------------------------------------------------------------------------+
@@ -235,12 +235,12 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ;     -- Logic LABs                                           ; 2             ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0             ;       ;
 ;                                                             ;               ;       ;
-; Combinational ALUT usage for logic                          ; 4             ;       ;
+; Combinational ALUT usage for logic                          ; 3             ;       ;
 ;     -- 7 input functions                                    ; 0             ;       ;
 ;     -- 6 input functions                                    ; 0             ;       ;
 ;     -- 5 input functions                                    ; 0             ;       ;
 ;     -- 4 input functions                                    ; 0             ;       ;
-;     -- <=3 input functions                                  ; 4             ;       ;
+;     -- <=3 input functions                                  ; 3             ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0             ;       ;
 ; Dedicated logic registers                                   ; 0             ;       ;
 ;     -- By type:                                             ;               ;       ;
@@ -252,7 +252,7 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ;                                                             ;               ;       ;
 ; Virtual pins                                                ; 0             ;       ;
 ; I/O pins                                                    ; 9 / 224       ; 4 %   ;
-;     -- Clock pins                                           ; 1 / 9         ; 11 %  ;
+;     -- Clock pins                                           ; 0 / 9         ; 0 %   ;
 ;     -- Dedicated input pins                                 ; 0 / 11        ; 0 %   ;
 ;                                                             ;               ;       ;
 ; Global signals                                              ; 0             ;       ;
@@ -273,10 +273,10 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; Impedance control blocks                                    ; 0 / 3         ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0% / 0% / 0%  ;       ;
 ; Peak interconnect usage (total/H/V)                         ; 0% / 0% / 0%  ;       ;
-; Maximum fan-out                                             ; 4             ;       ;
-; Highest non-global fan-out                                  ; 4             ;       ;
-; Total fan-out                                               ; 22            ;       ;
-; Average fan-out                                             ; 1.00          ;       ;
+; Maximum fan-out                                             ; 2             ;       ;
+; Highest non-global fan-out                                  ; 2             ;       ;
+; Total fan-out                                               ; 17            ;       ;
+; Average fan-out                                             ; 0.81          ;       ;
 +-------------------------------------------------------------+---------------+-------+
 
 
@@ -305,12 +305,12 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ;     -- Logic LABs                                           ; 2                  ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ; 0                              ;
 ;                                                             ;                    ;                                ;
-; Combinational ALUT usage for logic                          ; 4                  ; 0                              ;
+; Combinational ALUT usage for logic                          ; 3                  ; 0                              ;
 ;     -- 7 input functions                                    ; 0                  ; 0                              ;
 ;     -- 6 input functions                                    ; 0                  ; 0                              ;
 ;     -- 5 input functions                                    ; 0                  ; 0                              ;
 ;     -- 4 input functions                                    ; 0                  ; 0                              ;
-;     -- <=3 input functions                                  ; 4                  ; 0                              ;
+;     -- <=3 input functions                                  ; 3                  ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ; 0                              ;
 ; Memory ALUT usage                                           ; 0                  ; 0                              ;
 ;     -- 64-address deep                                      ; 0                  ; 0                              ;
@@ -338,7 +338,7 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ;     -- Registered Output Connections                        ; 0                  ; 0                              ;
 ;                                                             ;                    ;                                ;
 ; Internal Connections                                        ;                    ;                                ;
-;     -- Total Connections                                    ; 22                 ; 0                              ;
+;     -- Total Connections                                    ; 17                 ; 0                              ;
 ;     -- Registered Connections                               ; 0                  ; 0                              ;
 ;                                                             ;                    ;                                ;
 ; External Connections                                        ;                    ;                                ;
@@ -371,8 +371,8 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
-; a    ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 4                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; b    ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; a    ; G16   ; 7A       ; 50           ; 45           ; 51           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; b    ; D17   ; 7A       ; 50           ; 45           ; 0            ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+
 
 
@@ -381,13 +381,13 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 +----------+-------+----------+--------------+--------------+--------------+-----------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; andgate  ; Y16   ; 4A       ; 40           ; 0            ; 57           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; nandgate ; V15   ; 4A       ; 38           ; 0            ; 0            ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; norgate  ; AB18  ; 4A       ; 38           ; 0            ; 34           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; notgate  ; Y15   ; 4A       ; 36           ; 0            ; 0            ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; orgate   ; V14   ; 4A       ; 38           ; 0            ; 17           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; xnorgate ; Y14   ; 4A       ; 36           ; 0            ; 17           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; xorgate  ; AB15  ; 4A       ; 36           ; 0            ; 51           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; andgate  ; G18   ; 7A       ; 48           ; 45           ; 0            ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; nandgate ; J19   ; 7A       ; 48           ; 45           ; 34           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; norgate  ; E16   ; 7A       ; 50           ; 45           ; 17           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; notgate  ; G15   ; 7A       ; 43           ; 45           ; 34           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; orgate   ; G17   ; 7A       ; 50           ; 45           ; 34           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; xnorgate ; P17   ; 5A       ; 54           ; 17           ; 20           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; xorgate  ; AB22  ; 4A       ; 46           ; 0            ; 51           ; no              ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -399,10 +399,10 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; 2A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 3A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 9 / 48 ( 19 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 1 / 48 ( 2 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 1 / 16 ( 6 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 7 / 48 ( 15 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 8A       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
 +----------+-----------------+---------------+--------------+---------------+
 
@@ -447,8 +447,8 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 105        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA13     ; 113        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA14     ; 111        ; 4A       ; a                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA15     ; 116        ; 4A       ; b                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA14     ; 111        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA15     ; 116        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AA17     ; 127        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA18     ; 129        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -470,14 +470,14 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; AB12     ; 108        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB13     ; 106        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB14     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB15     ; 114        ; 4A       ; xorgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB15     ; 114        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB17     ; 119        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AB18     ; 121        ; 4A       ; norgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB18     ; 121        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB19     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB20     ; 122        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB21     ; 124        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AB22     ; 135        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB22     ; 135        ; 4A       ; xorgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; B1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B3       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -538,7 +538,7 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; D14      ;            ; --       ; VCCPD7A8A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; D15      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; D16      ;            ; --       ; VCCPD7A8A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; D17      ; 207        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; D17      ; 207        ; 7A       ; b                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; D18      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; D19      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; D20      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -559,7 +559,7 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; E13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; E14      ; 231        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; E15      ; 215        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; E16      ; 209        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; E16      ; 209        ; 7A       ; norgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; E17      ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; E18      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; E19      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -602,10 +602,10 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; G12      ; 245        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G13      ; 237        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G14      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; G15      ; 224        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; G16      ; 210        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; G17      ; 208        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; G18      ; 211        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; G15      ; 224        ; 7A       ; notgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; G16      ; 210        ; 7A       ; a                               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; G17      ; 208        ; 7A       ; orgate                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; G18      ; 211        ; 7A       ; andgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; G19      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; G20      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; G21      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -650,7 +650,7 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; J16      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; J17      ; 220        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; J18      ; 214        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; J19      ; 212        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; J19      ; 212        ; 7A       ; nandgate                        ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; J20      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; J21      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; J22      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -758,7 +758,7 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; P14      ; 142        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P16      ; 167        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; P17      ; 169        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; P17      ; 169        ; 5A       ; xnorgate                        ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; P18      ; 168        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P19      ; 166        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P20      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -843,8 +843,8 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; V11      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V13      ; 107        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; V14      ; 118        ; 4A       ; orgate                          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V15      ; 120        ; 4A       ; nandgate                        ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V14      ; 118        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; V15      ; 120        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V16      ; 134        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V18      ; 149        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -887,9 +887,9 @@ The pin-out file can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.pin.
 ; Y11      ; 103        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y12      ;            ; 3B       ; VREFB3BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; Y14      ; 115        ; 4A       ; xnorgate                        ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y15      ; 117        ; 4A       ; notgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y16      ; 123        ; 4A       ; andgate                         ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y14      ; 115        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y15      ; 117        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y16      ; 123        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y17      ; 125        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y18      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y19      ; 141        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -905,7 +905,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+--------------+
-; |GATES_TT                  ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |GATES_TT           ; work         ;
+; |GATES_TT                  ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |GATES_TT           ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -927,21 +927,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+-----------------------------------------------------+
-; Pad To Core Delay Chain Fanout                      ;
-+-----------------------+-------------------+---------+
-; Source Pin / Fanout   ; Pad To Core Index ; Setting ;
-+-----------------------+-------------------+---------+
-; a                     ;                   ;         ;
-;      - comb~0         ; 0                 ; 0       ;
-;      - comb~1         ; 0                 ; 0       ;
-;      - comb~2         ; 0                 ; 0       ;
-;      - notgate~output ; 0                 ; 0       ;
-; b                     ;                   ;         ;
-;      - comb~0         ; 0                 ; 0       ;
-;      - comb~1         ; 0                 ; 0       ;
-;      - comb~2         ; 0                 ; 0       ;
-+-----------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; a                   ;                   ;         ;
+;      - comb~0       ; 0                 ; 0       ;
+;      - comb~1       ; 0                 ; 0       ;
+; b                   ;                   ;         ;
+;      - comb~0       ; 0                 ; 0       ;
+;      - comb~1       ; 0                 ; 0       ;
++---------------------+-------------------+---------+
 
 
 +---------------------------------+
@@ -949,9 +946,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+-----------------------+
 ; Name    ; Fan-Out               ;
 +---------+-----------------------+
-; a~input ; 4                     ;
-; b~input ; 3                     ;
-; comb~2  ; 2                     ;
+; b~input ; 2                     ;
+; a~input ; 2                     ;
 ; comb~1  ; 2                     ;
 ; comb~0  ; 2                     ;
 +---------+-----------------------+
@@ -962,14 +958,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-----------------------+
 ; Interconnect Resource Type ; Usage                 ;
 +----------------------------+-----------------------+
-; Block interconnects        ; 9 / 140,056 ( < 1 % ) ;
+; Block interconnects        ; 6 / 140,056 ( < 1 % ) ;
 ; C12 interconnects          ; 0 / 6,048 ( 0 % )     ;
-; C2 interconnects           ; 6 / 54,648 ( < 1 % )  ;
-; C4 interconnects           ; 2 / 25,920 ( < 1 % )  ;
+; C2 interconnects           ; 1 / 54,648 ( < 1 % )  ;
+; C4 interconnects           ; 3 / 25,920 ( < 1 % )  ;
 ; Local interconnects        ; 0 / 36,960 ( 0 % )    ;
 ; R14 interconnects          ; 0 / 5,984 ( 0 % )     ;
-; R3 interconnects           ; 4 / 60,192 ( < 1 % )  ;
-; R6 interconnects           ; 1 / 127,072 ( < 1 % ) ;
+; R3 interconnects           ; 2 / 60,192 ( < 1 % )  ;
+; R6 interconnects           ; 0 / 127,072 ( 0 % )   ;
 +----------------------------+-----------------------+
 
 
@@ -1131,36 +1127,36 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:14
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:10
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X44_Y34 to location X54_Y45
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
-Info (144001): Generated suppressed messages file E:/Quartus II/EXP_1a/output_files/GATES_TT.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (144001): Generated suppressed messages file C:/Users/SEC/OneDrive/Desktop/study-of-basic-gates/output_files/GATES_TT.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5562 megabytes
-    Info: Processing ended: Tue Jan 09 19:42:32 2024
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Peak virtual memory: 5565 megabytes
+    Info: Processing ended: Fri Mar 15 10:39:25 2024
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in E:/Quartus II/EXP_1a/output_files/GATES_TT.fit.smsg.
+The suppressed messages can be found in C:/Users/SEC/OneDrive/Desktop/study-of-basic-gates/output_files/GATES_TT.fit.smsg.
 
 

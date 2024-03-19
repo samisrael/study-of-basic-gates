@@ -1,5 +1,5 @@
 EDA Netlist Writer report for GATES_TT
-Tue Jan 09 19:45:11 2024
+Fri Mar 15 10:45:03 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Jan 09 19:45:10 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Mar 15 10:45:03 2024 ;
 ; Revision Name             ; GATES_TT                              ;
 ; Top-level Entity Name     ; GATES_TT                              ;
 ; Family                    ; Cyclone V                             ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------+
-; Simulation Generated Files                           ;
-+------------------------------------------------------+
-; Generated Files                                      ;
-+------------------------------------------------------+
-; E:/Quartus II/EXP_1a/simulation/modelsim/GATES_TT.vo ;
-+------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                         ;
++------------------------------------------------------------------------------------+
+; Generated Files                                                                    ;
++------------------------------------------------------------------------------------+
+; C:/Users/SEC/OneDrive/Desktop/study-of-basic-gates/simulation/modelsim/GATES_TT.vo ;
++------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jan 09 19:45:08 2024
+    Info: Processing started: Fri Mar 15 10:45:02 2024
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog GATES_TT -c GATES_TT
-Info (204019): Generated file GATES_TT.vo in folder "E:/Quartus II/EXP_1a/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file GATES_TT.vo in folder "C:/Users/SEC/OneDrive/Desktop/study-of-basic-gates/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4578 megabytes
-    Info: Processing ended: Tue Jan 09 19:45:11 2024
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4583 megabytes
+    Info: Processing ended: Fri Mar 15 10:45:03 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
